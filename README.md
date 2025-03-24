@@ -27,13 +27,25 @@ Python Letterbox is a movie review application inspired by Letterboxd, developed
    ```bash
    cd python-letterbox
    ```
-
-3. **Install Required Dependencies**:
+3. **Create a virtual environment**:
+    ```bash
+    python -m venv venv
+    ```
+4. **Activate the virtual environment**:
+    - On Windows:
+      ```bash
+      venv\Scripts\activate
+      ```
+    - On Mac/Linux:
+      ```bash
+      source venv/bin/activate
+      ```
+5. **Install required dependencies**:
 
    ```bash
    pip install -r requirements.txt
    ```
-
+6. **Create an .env file and get an API key from https://www.themoviedb.org
 ### Running the Application
 
 ```bash

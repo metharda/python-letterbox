@@ -1,5 +1,8 @@
 import json
 import requests
+import os
+from dotenv import load_dotenv
+load_dotenv()
 
 database = {}
 def veritabani_kaydet():
@@ -54,7 +57,7 @@ def incelemeSil(film):
     veritabani_kaydet()
 
 ## tmdb API
-api_key = "c7fcfdc8be0f10565249cb5b86e74918"
+api_key = os.getenv("TMDB_API_KEY")
 def get_movie_details(movie_name):
     url = f"https://api.themoviedb.org/3/search/movie?api_key={api_key}&query={movie_name}&language=tr"
     response = requests.get(url)

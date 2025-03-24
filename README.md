@@ -45,7 +45,7 @@ Python Letterbox is a movie review application inspired by Letterboxd, developed
    ```bash
    pip install -r requirements.txt
    ```
-6. **Create an .env file and get an API key from https://www.themoviedb.org
+6. **Create an .env file and get an API key from https://www.themoviedb.org**
 ### Running the Application
 
 ```bash
